@@ -15,10 +15,10 @@ Encore
 .disableSingleRuntimeChunk()
 .enableSingleRuntimeChunk() // will require an extra script tag for runtime.js
 .cleanupOutputBeforeBuild()
-//.enableSourceMaps(!Encore.isProduction())
-//.enableVersioning(Encore.isProduction())
-.enableSourceMaps(!Encore.isDev())
-.enableVersioning(Encore.isDev())
+.enableSourceMaps(!Encore.isProduction())
+.enableVersioning(Encore.isProduction())
+//.enableSourceMaps(!Encore.isDev())
+//.enableVersioning(Encore.isDev())
 .enableSassLoader()
 .setManifestKeyPrefix('')
 ;

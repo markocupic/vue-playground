@@ -30,7 +30,7 @@ export default {
 <template>
   <div class="container pb-5">
     <div class="mt-5">
-      <h1 class="text-center">Vue.js & Symfony Encore ara <span class="accent">AWESOME!</span></h1>
+      <h1 class="text-center">Vue.js & Symfony Webpack Encore are <span class="accent">AWESOME!</span></h1>
     </div>
     <div class="mt-4">
       <h2 class="text-center">Welcome {{ firstname }} {{ lastname }}!</h2>

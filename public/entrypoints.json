@@ -2,11 +2,11 @@
   "entrypoints": {
     "hello": {
       "js": [
-        "/bundles/markocupicvueplayground/runtime.js",
-        "/bundles/markocupicvueplayground/hello.js"
+        "/bundles/markocupicvueplayground/runtime.92eb2275.js",
+        "/bundles/markocupicvueplayground/hello.ae0a355a.js"
       ],
       "css": [
-        "/bundles/markocupicvueplayground/hello.css"
+        "/bundles/markocupicvueplayground/hello.8d641828.css"
       ]
     }
   }
