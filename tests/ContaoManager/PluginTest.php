@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Vue Playground.
  *
@@ -9,7 +11,6 @@
  * please view the LICENSE file that was distributed with this source code.
  * @link https://github.com/markocupic/vue-playground
  */
-declare(strict_types=1);
 
 namespace Markocupic\VuePlayground\Tests\ContaoManager;
 
@@ -22,7 +23,6 @@ use Markocupic\VuePlayground\MarkocupicVuePlayground;
 
 class PluginTest extends ContaoTestCase
 {
-
     public function testInstantiation(): void
     {
         $this->assertInstanceOf(Plugin::class, new Plugin());

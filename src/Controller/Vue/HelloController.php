@@ -24,7 +24,6 @@ use Twig\Environment as Twig;
 #[Route('/vue/hello', name: HelloController::class, defaults: ['_scope' => 'frontend', '_token_check' => true])]
 class HelloController extends AbstractController
 {
-
     public function __construct(
         private readonly Twig $twig,
         private readonly Security $security,
@@ -43,7 +42,7 @@ class HelloController extends AbstractController
         return new Response(
             $this->twig->render('@MarkocupicVuePlayground/Vue/hello.html.twig', [
                 'firstname' => $firstname ?? 'Arnold',
-                'lastname'  => $lastname ?? 'Schwarzenegger',
+                'lastname' => $lastname ?? 'Schwarzenegger',
             ])
         );
     }

@@ -24,7 +24,6 @@ class Base64Extension extends AbstractExtension
         return [
             new TwigFilter('base64_encode', [$this, 'encode']),
             new TwigFilter('base64_decode', [$this, 'decode']),
-
         ];
     }
 
@@ -35,6 +34,6 @@ class Base64Extension extends AbstractExtension
 
     public function decode(string $data): string
     {
-        return base64_decode($data);
+        return base64_decode($data, true);
     }
 }
