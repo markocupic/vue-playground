@@ -1,6 +1,7 @@
 # Jetbrains
 /.idea/*
-
+# Webpack
+node_modules/*
 # tools
 /vendor/
 /tools/*/vendor
