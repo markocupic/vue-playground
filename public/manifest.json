@@ -1,0 +1,10 @@
+{
+  "hello.css": "/bundles/markocupicvueplayground/hello.css",
+  "hello.js": "/bundles/markocupicvueplayground/hello.js",
+  "runtime.js": "/bundles/markocupicvueplayground/runtime.js",
+  "images/hello/images/vue.png": "/bundles/markocupicvueplayground/images/hello/images/vue.b08d7cde.png",
+  "images/vue.png": "/bundles/markocupicvueplayground/images/vue.b08d7cde.png",
+  "hello.css.map": "/bundles/markocupicvueplayground/hello.css.map",
+  "hello.js.map": "/bundles/markocupicvueplayground/hello.js.map",
+  "runtime.js.map": "/bundles/markocupicvueplayground/runtime.js.map"
+}

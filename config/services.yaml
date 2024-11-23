@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        bind:
+        #$projectDir: '%kernel.project_dir%'
+
+    Markocupic\VuePlayground\:
+        resource: ../src/
+        exclude: ../src/{DependencyInjection}

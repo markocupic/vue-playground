@@ -1,0 +1,54 @@
+{
+    "name": "markocupic/vue-playground",
+    "description": "Vue Playground",
+    "keywords": [
+        "contao",
+        "vue",
+        "Symfony Encore",
+        "webpack",
+        "demo"
+    ],
+    "type": "contao-bundle",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Marko Cupic",
+            "email": "m.cupic@gmx.ch",
+            "homepage": "https://github.com/markocupic/vue-playground",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/markocupic/vue-playground/issues",
+        "source": "https://github.com/markocupic/vue-playground"
+    },
+    "require": {
+        "php": "^8.1",
+        "contao/core-bundle": "^4.13 || ^5.0",
+        "symfony/security-bundle": "^6.0 || ^7.0",
+        "symfony/webpack-encore-bundle": "^v2.2.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Markocupic\\VuePlayground\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": false,
+            "contao/manager-plugin": false,
+            "contao-community-alliance/composer-plugin": true
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Markocupic\\VuePlayground\\ContaoManager\\Plugin"
+    },
+    "scripts": {
+        "cs-fixer": "@php tools/ecs/vendor/bin/ecs check config/ contao/ src/ templates/ tests/ --config tools/ecs/config.php --fix --ansi",
+        "unit-tests": "@php tools/phpunit/vendor/bin/phpunit -c tools/phpunit/phpunit.xml.dist"
+    },
+    "version": "1.0"
+}
