@@ -3,10 +3,10 @@
     "hello": {
       "js": [
         "/bundles/markocupicvueplayground/runtime.92eb2275.js",
-        "/bundles/markocupicvueplayground/hello.d18a3e7a.js"
+        "/bundles/markocupicvueplayground/hello.1e6cb8e2.js"
       ],
       "css": [
-        "/bundles/markocupicvueplayground/hello.b99545ac.css"
+        "/bundles/markocupicvueplayground/hello.6c98cb3b.css"
       ]
     }
   }

@@ -2,11 +2,11 @@ const Encore = require('@symfony/webpack-encore');
 
 Encore
 .copyFiles({
-    from: './assets/vue/controllers/hello/images',
-    to: 'images/hello/images/[path][name].[hash:8].[ext]'
+    from: './assets/vue/components/hello/images',
+    to: 'images/hello/[path][name].[hash:8].[ext]'
 })
 // Add entries:
-.addEntry('hello', './assets/vue/controllers/hello/entry.js')
+.addEntry('hello', './assets/entries/hello.js')
 
 .setOutputPath('public/')
 .setPublicPath('/bundles/markocupicvueplayground')

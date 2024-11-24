@@ -36,7 +36,7 @@ export default {
       <h2 class="text-center">Welcome {{ firstname }} {{ lastname }}!</h2>
     </div>
     <div class="mt-5">
-      <img src="./../images/vue.png" alt="learning vue.js">
+      <img src="./images/vue.png" alt="learning vue.js">
     </div>
     <div class="mt-5 d-flex justify-content-center">
       <button class="btn btn-lg btn-danger" @click="counter">Count is: {{ count }}</button>

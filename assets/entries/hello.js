@@ -1,13 +1,11 @@
-import './styles/scss/main.scss'
+import './../styles/scss/hello.scss'
 
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
 import {createApp} from 'vue';
-import Hello from './components/Hello.vue';
+import Hello from './../vue/components/hello/Hello.vue';
 
-const entry = createApp(Hello,{
+createApp(Hello, {
     params: JSON.parse(atob(document.querySelector('#hello').dataset.params)),
-})
-
-entry.mount('#hello');
+}).mount('#hello');
