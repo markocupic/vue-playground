@@ -1,10 +1,16 @@
+<script setup> // With <script setup>, imported components are automatically made available to the template.
+import Product from './../product/Product.vue'
+</script>
+
 <script>
 export default {
+  props: ['params'], // Make this root prop available in this component
   data() {
     return {
       firstname: '',
       lastname: '',
       count: 0,
+      products: [],
     };
   },
   setup() {
@@ -14,11 +20,11 @@ export default {
     // Get props from root
     this.firstname = this.params.firstname;
     this.lastname = this.params.lastname;
+    this.products = this.params.products;
   },
   mounted() {
     //
   },
-  props: ['params'], // Make these root props available in this component
   methods: {
     counter() {
       this.count++;
@@ -41,6 +47,14 @@ export default {
     <div class="mt-5 d-flex justify-content-center">
       <button class="btn btn-lg btn-danger" @click="counter">Count is: {{ count }}</button>
     </div>
+    <div class="products mt-5">
+      <div class="row">
+        <Product
+            v-for="product in products"
+            :product="product"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -53,7 +67,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  color: #00b2a9;
+  color: #ffffff;
 }
 
 img {

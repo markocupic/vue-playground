@@ -10,6 +10,7 @@
 {% set data = {
     firstname: firstname,
     lastname: lastname,
+    products: products,
 }|json_encode|base64_encode %}
 
 <div id="hello" data-params="{{ data }}"></div>

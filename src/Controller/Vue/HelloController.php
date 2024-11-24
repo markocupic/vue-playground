@@ -43,6 +43,23 @@ class HelloController extends AbstractController
             $this->twig->render('@MarkocupicVuePlayground/Vue/hello.html.twig', [
                 'firstname' => $firstname ?? 'Arnold',
                 'lastname' => $lastname ?? 'Schwarzenegger',
+                'products' => [
+                    [
+                        'type' => 'apple',
+                        'price' => '1.00',
+                        'likes' => 135,
+                    ],
+                    [
+                        'type' => 'cherry',
+                        'price' => '2.00',
+                        'likes' => 99,
+                    ],
+                    [
+                        'type' => 'cheese',
+                        'price' => '3.50',
+                        'likes' => 44,
+                    ]
+                ]
             ])
         );
     }
