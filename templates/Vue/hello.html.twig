@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <title>{% block title %}Vue Hello!{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ insert_tag('asset::hello.css::markocupic_vue_playground') }}">
+    <link rel="stylesheet" href="{{ asset('hello.css', 'markocupic_vue_playground') }}">
 </head>
 <body>
-
 {% set data = {
     firstname: firstname,
     lastname: lastname,
@@ -15,7 +14,7 @@
 
 <div id="hello" data-params="{{ data }}"></div>
 {# Encore.enableSingleRuntimeChunk() will require an extra script tag for runtime.js #}
-<script src="{{ insert_tag('asset::runtime.js::markocupic_vue_playground') }}"></script>
-<script src="{{ insert_tag('asset::hello.js::markocupic_vue_playground') }}"></script>
+<script src="{{ asset('runtime.js', 'markocupic_vue_playground') }}"></script>
+<script src="{{ asset('hello.js', 'markocupic_vue_playground') }}"></script>
 </body>
 </html>
