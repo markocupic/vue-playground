@@ -1,6 +1,4 @@
 <script>
-import {inject} from 'vue';
-
 export default {
   data() {
     return {
@@ -12,13 +10,15 @@ export default {
   setup() {
     //
   },
-  mounted() {
-    // Inject params from the data attribute
-    const params = inject('params');
-
-    this.firstname = params.firstname;
-    this.lastname = params.lastname;
+  beforeMount() {
+    // Get props from root
+    this.firstname = this.params.firstname;
+    this.lastname = this.params.lastname;
   },
+  mounted() {
+    //
+  },
+  props: ['params'], // Make these root props available in this component
   methods: {
     counter() {
       this.count++;
@@ -45,10 +45,6 @@ export default {
 </template>
 
 <style scoped>
-img {
-  max-width: 100%
-}
-
 h1 {
   font-size: 6rem;
   color: #000;
@@ -58,6 +54,10 @@ h1 {
 h2 {
   font-size: 3rem;
   color: #00b2a9;
+}
+
+img {
+  max-width: 100%
 }
 
 .accent {
